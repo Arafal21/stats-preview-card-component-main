@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: hsl(233deg, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section.card {
+  max-width: 700px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: hsl(244deg, 38%, 16%);
+  width: 90%;
+}
+section.card .card-img .img-mobile {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+section.card .card-img .img-desktop {
+  display: none;
+}
+section.card .card-body {
+  padding: 20px;
+}
+section.card .card-body .card-header-text {
+  font-size: 2rem;
+  text-align: center;
+}
+section.card .card-body .card-header-text h1.main-name {
+  color: hsl(0deg, 0%, 100%);
+}
+section.card .card-body .card-header-text h1.main-name span.in-text {
+  color: hsl(277deg, 64%, 61%);
+}
+section.card .card-body .card-description .desc {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+}
+section.card .card-body .card-stats .statistics {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.card .card-body .card-stats .statistics .numbers {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+section.card .card-body .card-stats .type {
+  font-size: 1rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  section.card {
+    border-top-left-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section.card .card-img {
+    width: 50%;
+  }
+  section.card .card-img .img-mobile {
+    display: none;
+  }
+  section.card .card-img .img-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  section.card .card-body {
+    width: 50%;
+    padding: 20px;
+  }
+  section.card .card-body .card-header-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section.card .card-body .card-header-text h1.main-name {
+    color: hsl(0deg, 0%, 100%);
+  }
+  section.card .card-body .card-header-text h1.main-name span.in-text {
+    color: hsl(277deg, 64%, 61%);
+  }
+  section.card .card-body .card-description .desc {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    font-size: 1.5rem;
+  }
+  section.card .card-body .card-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.card .card-body .card-stats .statistics {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section.card .card-body .card-stats .statistics .numbers {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  section.card .card-body .card-stats .type {
+    font-size: 1rem;
+    color: hsla(0deg, 0%, 100%, 0.6);
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=style.css.map */
